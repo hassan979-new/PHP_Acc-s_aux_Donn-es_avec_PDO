@@ -1,0 +1,13 @@
+[2026-02-22 18:27:17] ERREUR: Test error message | context={"x":1}
+[2026-02-22 19:39:29] ERREUR: PDO connection failed | context={"method":"App\\Database\\DBConnection::get","dsn":"mysql:host=127.0.0.1;port=3306;dbname=gestion_etudiants_pdo;charset=utf8mb4","error":"could not find driver"}
+[2026-02-22 19:39:29] ERREUR: Test error message | context={"x":1}
+[2026-02-22 19:44:25] ERREUR: PDO connection failed | context={"method":"App\\Database\\DBConnection::get","dsn":"mysql:host=127.0.0.1;port=3306;dbname=gestion_etudiants_pdo;charset=utf8mb4","error":"could not find driver"}
+[2026-02-22 19:44:25] ERREUR: Test error message | context={"x":1}
+[2026-02-22 19:53:13] ERREUR: PDO connection failed | context={"method":"App\\Database\\DBConnection::get","dsn":"mysql:host=127.0.0.1;port=3306;dbname=gestion_etudiants_pdo;charset=utf8mb4","error":"could not find driver"}
+[2026-02-22 19:53:13] ERREUR: Test error message | context={"x":1}
+[2026-02-22 20:58:57] ERREUR: PDO connection failed | context={"method":"App\\Database\\DBConnection::get","dsn":"mysql:host=127.0.0.1;port=3306;dbname=gestion_etudiants_pdo;charset=utf8mb4","error":"SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it"}
+[2026-02-22 20:58:57] ERREUR: Test error message | context={"x":1}
+[2026-02-22 20:59:56] ERREUR: Test error message | context={"x":1}
+[2026-02-22 23:04:56] ERREUR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alice@example.com' for key 'uq_etudiant_email' | context={"method":"App\\Dao\\EtudiantDao::insert","sql":"INSERT INTO etudiant(cne, nom, prenom, email, filiere_id) VALUES(:cne, :nom, :prenom, :email, :filiere_id)","cne":"CNE1234","email":"alice@example.com"}
+[2026-02-22 23:04:56] ERREUR: Transaction rolled back: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alice@example.com' for key 'uq_etudiant_email' | context={"method":"C:\\xampp\\htdocs\\projet5\\test_dao.php:transaction"}
+[2026-02-22 23:07:58] ERREUR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alice@example.com' for key 'uq_etudiant_email' | context={"method":"App\\Dao\\EtudiantDao::insert","sql":"INSERT INTO etudiant(cne, nom, prenom, email, filiere_id) VALUES(:cne, :nom, :prenom, :email, :filiere_id)","cne":"CNE8001","email":"alice@example.com"}
